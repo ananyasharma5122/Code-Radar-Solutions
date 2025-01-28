@@ -8,7 +8,7 @@ int main() {
     scanf("%d",&age);
     getchar();
     fgets(hobby,sizeof(hobby),stdin);
-    printf("nName: %s\n",name);
+    printf("\nName: %s\n",name);
     printf("Age: %d\n",age);
     printf("Hobby: %s\n",hobby);
     return 0;
