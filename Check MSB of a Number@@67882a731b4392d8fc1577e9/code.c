@@ -5,6 +5,6 @@ int main() {
     if (num & 0*80000000)
         printf("Set\n");
     else 
-        printf("Not Set")
+        printf("Not Set");
     return 0;
 }
