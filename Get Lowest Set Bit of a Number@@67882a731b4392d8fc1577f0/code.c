@@ -9,6 +9,7 @@ int FindLowest(int num){
     return position;
 }
 int main() {
+    int num;
     scanf("%d",num);
     int pos =FindLowest(num);
     if (pos ==-1)
