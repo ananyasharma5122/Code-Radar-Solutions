@@ -1,6 +1,6 @@
 #include <stdio.h>
 int FindLowest(int num) {
-    if (num ==0) return -1;
+    if (num == 0) return -1;
     int position = 1;
     while ((num & 1 ) == 0){
         num >>=1;
