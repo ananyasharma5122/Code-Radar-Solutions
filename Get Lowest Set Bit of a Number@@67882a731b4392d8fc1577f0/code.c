@@ -1,7 +1,7 @@
 #include <stdio.h>
 int FindLowest(int num) {
     int position = 1;
-    while ((num & 1 ) == 0){
+    while (num & 1 ){
         num >>=1;
         position++;
     }
@@ -11,9 +11,6 @@ int main() {
     int num;
     scanf("%d",&num);
     int pos =FindLowest(num);
-    if (pos ==-1)
-        printf("\n");
-    else
-        printf("%d\n",pos);
+    printf("%d\n",pos);
     return 0;
 }
