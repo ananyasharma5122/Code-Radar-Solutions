@@ -12,5 +12,5 @@ int main() {
     scanf("%d",&num);
     int pos =FindLowest(num);
     printf("%d\n",pos);
-    return 0;
+  
 }
