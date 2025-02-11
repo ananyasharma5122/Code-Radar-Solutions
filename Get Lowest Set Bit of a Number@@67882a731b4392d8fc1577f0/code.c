@@ -10,7 +10,7 @@ int FindLowest(int num) {
 }
 int main() {
     int num;
-    scanf("%d",num);
+    scanf("%d",&num);
     int pos =FindLowest(num);
     if (pos ==-1)
         printf("\n");
