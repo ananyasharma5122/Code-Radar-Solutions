@@ -8,9 +8,10 @@ int main() {
     scanf("%d %d", &num1, &num2);
 
     // Check condition
-    if (num1 >= num2) {
+    if (num1 >= num2 && num1%num2==0) {
         printf("Yes");
-    } else {
+
+    } else if {
         printf("No");
     }
 
