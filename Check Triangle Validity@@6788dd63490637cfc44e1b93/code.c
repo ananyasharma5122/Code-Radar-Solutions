@@ -9,9 +9,9 @@ int main() {
 
     // Check triangle validity (Triangle Inequality Theorem)
     if (a + b > c && a + c > b && b + c > a) {
-        printf("Valid Triangle");
+        printf("Valid");
     } else {
-        printf("Not a Valid Triangle");
+        printf("Invalid");
     }
 
     return 0;
