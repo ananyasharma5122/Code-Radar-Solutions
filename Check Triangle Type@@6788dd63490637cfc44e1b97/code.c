@@ -1,17 +1,28 @@
-// Your code here...
 #include <stdio.h>
-int main() {
-    int num1,num2,num3;
-    scanf("%d %d %d",&num1,&num2,&num3);
-    if (num1 + num2 > num3 && num1 + num3 > num2 && num2 + num3 > num1) {
-       if ((num1==num2 && num2==num3 && num3==num1)) {
-          printf("Equilateral");
-        } 
-       else if ((num1==num2 || num2==num3 || num3=num1)) {
-          printf("Isosceles");
-        } else {
-           printf("Scalene");
-        }
 
+int main() {
+    int a, b, c;
+
+    // Input three sides of the triangle
+    scanf("%d %d %d", &a, &b, &c);
+
+    // Check if it forms a valid triangle
+    if (a + b > c && a + c > b && b + c > a) {
+        // Check for Equilateral triangle (all sides equal)
+        if (a == b && b == c) {
+            printf("Equilateral");
+        }
+        // Check for Isosceles triangle (any two sides equal)
+        else if (a == b || b == c || a == c) {
+            printf("Isosceles");
+        }
+        // If no sides are equal, it's a Scalene triangle
+        else {
+            printf("Scalene");
+        }
+    } else {
+        printf("Not a Triangle");
     }
+
+    return 0;
 }
