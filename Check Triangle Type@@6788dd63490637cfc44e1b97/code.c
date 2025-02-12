@@ -5,14 +5,13 @@ int main() {
     scanf("%d %d %d",&num1,&num2,&num3);
     if (num1 + num2 > num3 && num1 + num3 > num2 && num2 + num3 > num1) {
        if ((num1==num2 && num2==num3 && num3==num1)) {
-        printf("Equilateral");
+          printf("Equilateral");
+        } 
        else if ((num1==num2 || num2==num3 || num3=num1)) {
-        printf("Isosceles");
-       }
-       else {
-        printf("Scalene");
-       }
-    }
+          printf("Isosceles");
+        } else {
+           printf("Scalene");
+        }
 
     }
 }
