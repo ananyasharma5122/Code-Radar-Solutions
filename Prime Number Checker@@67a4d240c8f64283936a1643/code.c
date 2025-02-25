@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     int num, i, isPrime = 1;  // 'isPrime' assumes the number is prime by default
 
     // Input a positive number
@@ -10,9 +10,7 @@ int main() {
     // Check if the number is less than 2 (0 and 1 are not prime)
     if (num <= 1) {
         isPrime = 0;
-    }
-
-    // Loop to check for factors
+}
     for (i = 2; i * i <= num; i++) {
         if (num % i == 0) {
             isPrime = 0;  // If divisible, set isPrime to 0 (not prime)
