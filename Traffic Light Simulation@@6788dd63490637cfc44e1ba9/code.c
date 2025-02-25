@@ -15,7 +15,7 @@ int main() {
     } else if (trafficLight == 'Y' || trafficLight == 'y') {
         printf("Slow Down\n");
     } else {
-        printf("Invalid input! Please enter 'R', 'G', or 'Y'.\n");
+        printf("Invalid input");
     }
 
     return 0;
