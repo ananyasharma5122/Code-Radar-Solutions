@@ -4,7 +4,7 @@ int main() {
     char trafficLight;
 
     // Input the traffic light signal
-    printf("Enter the traffic light signal (R for Red, G for Green, Y for Yellow): ");
+
     scanf("%c", &trafficLight);
 
     // Check the input and output the corresponding action
