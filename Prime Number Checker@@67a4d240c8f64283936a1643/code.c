@@ -1,31 +1,27 @@
 #include <stdio.h>
 
-// Function to check if the number is prime
-int isPrime(int n) {
-    // Handle the case for numbers less than 2
-    if (n <= 1) {
-        return 0;  // 0 and 1 are not prime numbers
-    }
-    
-    // Check for factors from 2 to the square root of n
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            return 0;  // n is divisible by i, hence not prime
-        }
-    }
-    
-    return 1;  // n is prime
-}
-
 int main() {
-    int num;
-    
+    int num, i, isPrime = 1;  // 'isPrime' assumes the number is prime by default
+
     // Input a positive number
     printf("Enter a positive number: ");
     scanf("%d", &num);
 
-    // Check and display if the number is prime or not
-    if (isPrime(num)) {
+    // Check if the number is less than 2 (0 and 1 are not prime)
+    if (num <= 1) {
+        isPrime = 0;
+    }
+
+    // Loop to check for factors
+    for (i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            isPrime = 0;  // If divisible, set isPrime to 0 (not prime)
+            break;
+        }
+    }
+
+    // Output the result
+    if (isPrime) {
         printf("%d is a prime number.\n", num);
     } else {
         printf("%d is not a prime number.\n", num);
