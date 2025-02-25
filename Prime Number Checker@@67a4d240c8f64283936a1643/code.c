@@ -13,9 +13,7 @@ int is_prime(int n) {
             return 0;
     }
     return 1;
-}
-
-int main() {
+} {
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
