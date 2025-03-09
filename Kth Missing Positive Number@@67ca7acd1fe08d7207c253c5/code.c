@@ -18,28 +18,3 @@ int findKthMissing(int arr[], int n, int k) {
     
     return -1; // Should never reach here based on problem constraints
 }
-
-int main() {
-    int n, k;
-
-    // Read the size of the array
-    scanf("%d", &n);
-
-    int arr[n];
-
-    // Read the sorted array of distinct positive integers
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Read the value of K
-    scanf("%d", &k);
-
-    // Call the findKthMissing function
-    int result = findKthMissing(arr, n, k);
-
-    // Output the Kth missing positive number
-    printf("%d\n", result);
-
-    return 0;
-}
