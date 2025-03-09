@@ -30,25 +30,3 @@ int searchInRotatedArray(int arr[], int n, int target) {
 
     return -1; // Target not found
 }
-
-int main() {
-    int n, target;
-
-    // Read the size of the array
-    scanf("%d", &n);
-    int arr[n];
-
-    // Read the rotated sorted array
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Read the target value
-    scanf("%d", &target);
-
-    // Call the search function and print the result
-    int result = searchInRotatedArray(arr, n, target);
-    printf("%d\n", result);
-
-    return 0;
-}
