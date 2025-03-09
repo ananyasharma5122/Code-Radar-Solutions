@@ -13,7 +13,7 @@ void fibonacci(int n) {
     printf("\n");
 }
 
-int main() {
+ {
     int n;
 
     printf("Enter the number of terms: ");
