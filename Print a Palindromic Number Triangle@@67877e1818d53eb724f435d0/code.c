@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 void printPalindromicTriangle(int n) {
@@ -8,14 +7,14 @@ void printPalindromicTriangle(int n) {
             printf("  ");
         }
 
-        // Print increasing numbers
+        // Print increasing part of the palindrome
         for (int j = 1; j <= i; j++) {
-            printf("%d ", j);
+            printf("%d", j);
         }
 
-        // Print decreasing numbers
+        // Print decreasing part of the palindrome
         for (int j = i - 1; j >= 1; j--) {
-            printf("%d ", j);
+            printf("%d", j);
         }
 
         printf("\n");
@@ -31,3 +30,4 @@ int main() {
 
     return 0;
 }
+
