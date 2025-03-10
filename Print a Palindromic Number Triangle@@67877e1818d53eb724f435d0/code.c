@@ -24,7 +24,7 @@ void printPalindromicTriangle(int n) {
 
 int main() {
     int rows;
-    printf("Enter the number of rows: ");
+    printf("");
     scanf("%d", &rows);
 
     printPalindromicTriangle(rows);
